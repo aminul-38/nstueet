@@ -1,0 +1,178 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background-color: #f2f4f7;
+}
+
+/* For searchBar div */
+.searchBarDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.searchBar {
+  padding: 0 20px;
+}
+
+/* For searchResultContainer */
+.searchResultContainer {
+  position: relative;
+}
+.searchResultBox {
+  position: absolute;
+  border: 1px solid black;
+  width: 250px;
+  /* height: 150px; */
+  left: 90px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f4f7;
+  border: 2px solid #718355;
+  border-radius: 5px;
+  z-index: 3;
+}
+.searchResultBox hr {
+  margin: 0;
+  padding: 0;
+}
+.closeButton {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+.closeButton i {
+  background-color: white;
+  border-radius: 20px;
+}
+.closeButton i:hover {
+  background-color: #718355;
+  color: white;
+  cursor: pointer;
+}
+
+.peopleCard {
+  padding: 5px 10px;
+}
+.personInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #718355;
+  border-radius: 5px;
+  padding: 5px;
+}
+.personInfo:hover {
+  background-color: #f2f8fc;
+}
+
+.profileImageIcon {
+  margin-right: 10px;
+}
+.profileImageIcon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #718355;
+}
+.personName a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.personName a:hover {
+  color: #497404;
+}
+.noResult {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px 0;
+}
+
+/* For navIconsDiv */
+.navIconsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+/* For navIcon div */
+.navIconDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 18% 0 12%;
+}
+/* .navIconDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+    padding-right: 6%;
+  width: 40%;
+} */
+/* .navLink {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.activeLink {
+  color: #718355 !important;
+}
+.navIcon {
+  color: black;
+  transition: color 0.3s ease;
+}
+.navIcon:hover {
+  color: #718355;
+}
+
+/* For profileIcon div */
+.profileIconDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 30%;
+}
+/* .profileIconDiv {
+  margin: auto;
+} */
+
+@media (max-width: 767px) {
+  .Navbar {
+    flex-direction: column;
+  }
+  .searchBarDiv {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .searchBar {
+    padding: 0;
+  }
+  .navIconsDiv {
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+  }
+  .navIconDiv {
+    width: 90%;
+    margin: 0;
+  }
+}

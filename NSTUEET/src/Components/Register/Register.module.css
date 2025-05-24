@@ -1,0 +1,64 @@
+.registerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 3% 1% 3%;
+  border-bottom: 1px solid black;
+  background-color: #f2f4f7;
+}
+
+.logo {
+  font-size: 40px;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  color: #718355;
+}
+
+.registerHeaderAnchor {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.registerHeaderAnchor:hover {
+  font-weight: bold;
+}
+
+.registerForm {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formHolder {
+  background-color: white;
+  margin: 20px 0 20px 0;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.formHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.formHeading h1 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.formInput {
+  width: 540px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 425px) {
+  .registerHeaderAnchor {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .formInput {
+    width: 100%;
+  }
+}

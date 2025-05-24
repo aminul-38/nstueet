@@ -1,0 +1,135 @@
+.followingCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 20px auto 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.followingCardContainer hr {
+  width: 100%;
+  margin: 0;
+}
+
+/* headingSction */
+.headingSeciton {
+  text-align: center;
+  width: 100%;
+  background-color: #f2f4f7;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+.headingSeciton h2 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #718355;
+}
+
+/* personCard */
+.personCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px 0 0;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.personCard:hover {
+  background-color: #f2f4f7;
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileImageIcon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.personName {
+  margin-left: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 10px 0 0;
+}
+.personName a {
+  text-decoration: none;
+  color: black;
+}
+.personName a:hover {
+  color: #718355;
+}
+
+.followButton button {
+  color: #718355;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #718355;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.followButton button:hover {
+  background-color: #718355;
+  color: white;
+  cursor: pointer;
+}
+
+/* linkSection */
+.linkSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 10px 30px;
+  border-radius: 0 0 10px 10px;
+}
+.linkSection a {
+  text-decoration: none;
+  color: white;
+  background-color: #718355;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #718355;
+}
+.linkSection a:hover {
+  background-color: white;
+  color: #718355;
+  cursor: pointer;
+  border: 2px solid #718355;
+}
+
+@media (max-width: 1024px) {
+  .followingCardContainer {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .followingCardContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .followingCardContainer {
+    width: 100%;
+  }
+  .personCard {
+    width: 100%;
+    padding: 10px;
+  }
+}

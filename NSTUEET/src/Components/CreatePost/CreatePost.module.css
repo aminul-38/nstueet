@@ -1,0 +1,163 @@
+.createPostContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+/* headingSction */
+.createPostHeader {
+  text-align: center;
+  width: 100%;
+  background-color: #f2f4f7;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+}
+.createPostHeader h2 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #718355;
+}
+.createPostContainer hr {
+  width: 100%;
+  border: 2px solid black;
+  margin: 0;
+}
+
+/* createPostBody */
+
+/*userInfoSection */
+.profileImageIcon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #718355;
+}
+.userInfoSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+.userName {
+  margin-left: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/*postSection */
+.createPostBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.postInput {
+  width: 100%;
+}
+.postInput textarea {
+  width: 100%;
+  max-width: 1024px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/*createPostButtonSection */
+.createPostFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.postButton {
+  text-decoration: none;
+  color: #718355;
+  background-color: white;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #718355;
+}
+.postButton:hover {
+  background-color: #718355;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .createPostContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .createPostContainer {
+    width: 90%;
+  }
+
+  .postInput textarea {
+    height: 250px;
+    font-size: 0.9rem;
+  }
+
+  .profileImageIcon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .userName {
+    font-size: 1rem;
+  }
+
+  .postButton {
+    font-size: 1rem;
+    padding: 5px 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .createPostContainer {
+    width: 100%;
+  }
+  .postInput textarea {
+    height: 200px;
+    font-size: 0.85rem;
+  }
+
+  .userName {
+    font-size: 0.9rem;
+  }
+
+  .profileImageIcon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .postButton {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    width: 100%;
+  }
+}

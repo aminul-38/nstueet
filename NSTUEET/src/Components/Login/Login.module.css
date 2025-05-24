@@ -1,0 +1,84 @@
+.loginContainer {
+  background-color: #f2f4f7;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.loginRow {
+  padding: 10% 0;
+}
+
+.logoCol {
+  display: inline-block;
+  margin: 0 40px;
+}
+.logo {
+  font-size: 70px;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  color: #718355;
+}
+.moto {
+  font-size: 30px;
+  color: #333;
+}
+
+.formCol {
+  background-color: white;
+  display: inline-block;
+  margin: 0 40px;
+  padding: 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 2%;
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginInput {
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.regText {
+  margin: 30px 0 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 1137px) {
+  .logiRow {
+    padding: 5% 0 7%;
+  }
+  .formCol {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .logiRow {
+    padding: 5% 0 7%;
+  }
+  .logo {
+    font-size: 40px;
+  }
+
+  .moto {
+    font-size: 18px;
+  }
+
+  .formCol {
+    padding: 15px;
+  }
+
+  .loginInput {
+    padding: 8px;
+  }
+}
